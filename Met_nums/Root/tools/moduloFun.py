@@ -34,6 +34,9 @@ def search(f, interv, n_intervs=100):#con esta función encontraré intervalos d
             intervals.append(inter_i) # si hay cambio de signo, añade este subintervalo a intervals.     
     return intervals # al terminar el loop, regresa la lista de todos los subintervalos donde halló que habría raíces.   
 
+def df(f, x, h):
+    fd = (f(x+h/2)-f(x-h/2))/h
+    return fd
 
     
     
